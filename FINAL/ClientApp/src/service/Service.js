@@ -1,6 +1,7 @@
 ﻿
 
 async function CategoryData() {
+    debugger
     const requestOptions = {
         method: 'GET',
         headers: { 'Content-Type': 'application/json' },

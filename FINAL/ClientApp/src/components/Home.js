@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { CategoryData } from '../service/Service';
 
 export class Home extends Component {
   constructor(props) {
     super(props);
-      this.state = { forecasts: [], loading: true};
+      this.state = {
+          SuperCategoryList: [],
+          loading: true
+      };
   }
   
     isShowPopup = (status) => {
@@ -15,50 +18,43 @@ export class Home extends Component {
       this.GetAllCategoryData();
     }
     GetAllCategoryData() {
+        debugger;
         CategoryData().then(res => {
             let response = res;
             if (response.message !== Error) {
-                    this.setState({ forecasts: response.result});
+                this.setState({ SuperCategoryList: response.result});
                 this.setState({ loading: false }); // hide loader after load data
             }
         });
     }
   
-  static renderForecastsTable(forecasts) {
-      return (
-          <table className='table table-striped' aria-labelledby="tabelLabel">
-        <thead>
-          <tr>
-            <th>Categoryname  </th>
-          </tr>
-        </thead>
-              <tbody>
-                  {forecasts.map(forecast =>
-                      <tr key={forecast.catId}>
-                          <td>{forecast.catName}</td>
-                          <td><img src="E:\FINAL\ClientApp\src\Image\download.jfif" /></td>
-                          <td>
-                              <Link to={"/edit/" + forecast.catId} className="btn btn-success">Edit</Link>
-                          </td>
-                      </tr>
-         )}
-               </tbody>
-          </table>
-    );
-  }
 
-  render() {
-      let contents = this.state.loading
-          ? <p><em>Loading...</em></p> 
-      : Home.renderForecastsTable(this.state.forecasts);
 
+    render() {
+        const { SuperCategoryList } = this.state;
+        console.log(SuperCategoryList);
     return (
-        <div>
-        <h1 id="tabelLabel" >Business Info </h1>
-        <p>This Info Of All Stored Business.</p>
-        {contents}
-        </div>
-       
+        <>
+            <div className="container py-md-4 mt-lg-0 mt-md-4">
+                <div className="grids-area-hny main-cont-wthree-fea row justify-content-center">
+                    {SuperCategoryList.map(items =>
+                        <div className="card h-100" >
+                            <img className="card-img-top" style={{ maxWidth: '80px' }} src="../../Content/img/Delhi.png" alt="" />
+
+                            <div className="card-body">
+                                <h5 className="card-title text-center">{items.catName}</h5>
+
+                            </div>
+                            <NavLink to={"/category/" + items.catId} className="overlay-link"></NavLink>
+
+                        </div>
+                    )}
+                </div>
+            </div>
+
+        </>
+
+
     );
   }
 }

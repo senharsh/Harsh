@@ -5,7 +5,7 @@ import { Home } from './components/Home';
 import { AddBusinessInfo } from './components/AddBusinessInfo';
 import { FetchData } from './components/FetchData';
 import { Counter } from './components/Counter';
-import EditStudent from './components/EditStudent';
+import Category from './components/Category';
 import BusinessInfo from './components/BusinessInfo';
 import AuthorizeRoute from './components/api-authorization/AuthorizeRoute';
 import ApiAuthorizationRoutes from './components/api-authorization/ApiAuthorizationRoutes';
@@ -20,8 +20,8 @@ export default class App extends Component {
     return (
       <Layout>
             <Route exact path='/' component={Home} />
-            <Route path='/edit/:id' component={EditStudent} />
-            <Route path='/GetId/:subCatId' component={BusinessInfo} />
+            <Route path='/category/:id' component={Category} />
+            <Route path='/subcategory/:subCatId' component={BusinessInfo} />
             <Route exact path='/addBusinessInfo' component={AddBusinessInfo} />
         <Route path='/counter' component={Counter} />
         <AuthorizeRoute path='/fetch-data' component={FetchData} />

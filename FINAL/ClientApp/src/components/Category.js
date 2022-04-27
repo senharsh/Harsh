@@ -29,7 +29,7 @@ class Edit extends React.Component {
                             <td>{forecast.address}</td>
                             <td>{forecast.ownerContact}</td>
                             <td>
-                                <Link to={"/GetId/" + forecast.subCatId} className="btn btn-success">Edit</Link>
+                                <Link to={"/subcategory/" + forecast.subCatId} className="btn btn-success">Edit</Link>
                             </td>
                         </tr>
                     )}
