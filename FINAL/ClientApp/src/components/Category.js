@@ -1,5 +1,5 @@
 ﻿import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 class Edit extends React.Component {
     constructor(props) {
         super(props);
@@ -14,27 +14,26 @@ class Edit extends React.Component {
     }
     static renderStudentTable(subcategorydata) {
         return (
-            <table className='table table-striped' aria-labelledby="tabelLabel">
-                <thead>
-                    <tr>
-                        <th>Subcatgory Name  </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {subcategorydata.map(forecast =>
-                        <tr key={forecast.subCatId}>
-                            <td>{forecast.subCatName}</td>
-                            <td><img src="E:\FINAL\ClientApp\src\Image\download.jfif" /></td>
-                            <td>{forecast.ownerName}</td>
-                            <td>{forecast.address}</td>
-                            <td>{forecast.ownerContact}</td>
-                            <td>
-                                <Link to={"/subcategory/" + forecast.subCatId} className="btn btn-success">Edit</Link>
-                            </td>
-                        </tr>
+                    <>
+            <div className="container py-md-4 mt-lg-0 mt-md-4">
+                <div className="grids-area-hny main-cont-wthree-fea row justify-content-center">
+                    {subcategorydata.map(items =>
+                        <div className="card h-100" >
+                            <img className="card-img-top" style={{ maxWidth: '80px' }} src="../../Content/img/Delhi.png" alt="" />
+
+                            <div className="card-body">
+                                <h5 className="card-title text-center">{items.subCatName}</h5>
+
+                            </div>
+                            <NavLink to={"/subcategory/" + items.subCatId} className="overlay-link"></NavLink>
+
+                        </div>
                     )}
-                </tbody>
-            </table>
+                </div>
+            </div>
+
+        </>
+
         );
     }
     render() {
@@ -44,9 +43,7 @@ class Edit extends React.Component {
 
         return (
             <div>
-                <h1 id="tabelLabel" >Business Info </h1>
-                <p>This Info Of All Stored Business.</p>
-                {contents}
+                               {contents}
             </div>
 
         );

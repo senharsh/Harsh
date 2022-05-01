@@ -57,8 +57,6 @@ class BusinessInfo extends React.Component {
 
         return (
             <div>
-                <h1 id="tabelLabel" >Business Info </h1>
-                <p>This Info Of All Stored Business.</p>
                 {contents}
             </div>
 
