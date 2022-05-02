@@ -39,7 +39,7 @@ export class Home extends Component {
                 <div className="grids-area-hny main-cont-wthree-fea row justify-content-center">
                     {SuperCategoryList.map(items =>
                         <div className="card h-100" >
-                            <img className="card-img-top" style={{ maxWidth: '100px' }} src="../../Content/img/Delhi.png" alt="" />
+                            <img className="card-img-top" style={{ maxWidth: '100px' }} src="../../Content/img/12.png" alt="" />
 
                             <div className="card-body">
                                 <h5 className="card-title text-center">{items.catName}</h5>

@@ -19,7 +19,7 @@ class Edit extends React.Component {
                 <div className="grids-area-hny main-cont-wthree-fea row justify-content-center">
                     {subcategorydata.map(items =>
                         <div className="card h-100" >
-                            <img className="card-img-top" style={{ maxWidth: '80px' }} src="../../Content/img/Delhi.png" alt="" />
+                            <img className="card-img-top" style={{ maxWidth: '80px' }} src="../../Content/img/12.png" alt="" />
 
                             <div className="card-body">
                                 <h5 className="card-title text-center">{items.subCatName}</h5>
