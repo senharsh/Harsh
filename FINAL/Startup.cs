@@ -95,11 +95,11 @@ namespace FINAL
                     spa.UseReactDevelopmentServer(npmScript: "start");
                 }
             });
-            app.UseStaticFiles(new StaticFileOptions
-            {
-                FileProvider = new PhysicalFileProvider(Path.Combine(env.ContentRootPath, "Images")),
-                RequestPath = "/Images"
-            });
+            //app.UseStaticFiles(new StaticFileOptions
+            //{
+            //    FileProvider = new PhysicalFileProvider(Path.Combine(env.ContentRootPath, "Images")),
+            //    RequestPath = "/Images"
+            //});
         }
     }
 }
