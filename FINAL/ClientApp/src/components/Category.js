@@ -18,7 +18,7 @@ class Edit extends React.Component {
             <div className="container py-md-4 mt-lg-0 mt-md-4">
                 <div className="grids-area-hny main-cont-wthree-fea row justify-content-center">
                     {subcategorydata.map(items =>
-                        <div className="card h-100" >
+                        <div className="card mb-4" >
                             <img className="card-img-top" style={{ maxWidth: '80px' }} src="../../Content/img/12.png" alt="" />
 
                             <div className="card-body">

@@ -35,11 +35,11 @@ export class Home extends Component {
         console.log(SuperCategoryList);
     return (
         <>
-            <div className="container py-md-4 mt-lg-0 mt-md-4">
+            <div className="container py-md-4 mt-lg-0 mt-mb-4">
                 <div className="grids-area-hny main-cont-wthree-fea row justify-content-center">
                     {SuperCategoryList.map(items =>
-                        <div className="card h-100" >
-                            <img className="card-img-top" style={{ maxWidth: '100px' }} src="../../Content/img/12.png" alt="" />
+                        <div className="card mb-4" >
+                            {/*<img className="card-img-top" style={{ maxWidth: '100px' }} src="../../Content/img/12.png" alt="" />*/}
 
                             <div className="card-body">
                                 <h5 className="card-title text-center">{items.catName}</h5>
