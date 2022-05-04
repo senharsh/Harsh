@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { CategoryData } from '../service/Service';
+  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 export class Home extends Component {
   constructor(props) {
@@ -40,7 +42,9 @@ export class Home extends Component {
                     {SuperCategoryList.map(items =>
                         <div className="card mb-4" >
                             {/*<img className="card-img-top" style={{ maxWidth: '100px' }} src="../../Content/img/12.png" alt="" />*/}
-
+                            <h1>
+                                <i class={items.logo}></i>
+                            </h1>
                             <div className="card-body">
                                 <h5 className="card-title text-center">{items.catName}</h5>
 
