@@ -4,11 +4,13 @@ import { CategoryData } from '../service/Service';
 
 export class Home extends Component {
   constructor(props) {
-    super(props);
+      super(props);
+      
       this.state = {
           SuperCategoryList: [],
           loading: true
       };
+      
   }
   
     isShowPopup = (status) => {
@@ -17,8 +19,9 @@ export class Home extends Component {
   componentDidMount() {
       this.GetAllCategoryData();
     }
+   
+   
     GetAllCategoryData() {
-        debugger;
         CategoryData().then(res => {
             let response = res;
             if (response.message !== Error) {
@@ -27,7 +30,7 @@ export class Home extends Component {
             }
         });
     }
-  
+ 
 
 
     render() {
@@ -37,6 +40,7 @@ export class Home extends Component {
         <>
             <div className="container py-md-4 mt-lg-0 mt-mb-4">
                 <div className="grids-area-hny main-cont-wthree-fea row justify-content-center">
+                  
                     {SuperCategoryList.map(items =>
                         <div className="card mb-4" >
                             {/*<img className="card-img-top" style={{ maxWidth: '100px' }} src="../../Content/img/12.png" alt="" />*/}
@@ -48,7 +52,7 @@ export class Home extends Component {
 
                             </div>
                             <NavLink to={"/category/" + items.catId} className="overlay-link"></NavLink>
-
+                           
                         </div>
                     )}
                 </div>
@@ -57,7 +61,10 @@ export class Home extends Component {
         </>
 
 
-    );
-  }
+        );
+       
+    }
+
 }
+
 export default Home;

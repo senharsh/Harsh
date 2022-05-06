@@ -390,3 +390,14 @@ padding: 0 10px;
 .container {
     margin-top : 20px !important;
 }
+body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+}
+
+.dark-mode {
+    background-color: black;
+    
+}

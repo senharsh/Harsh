@@ -3,7 +3,12 @@ import { Container } from 'reactstrap';
 
 export class Layout extends Component {
     static displayName = Layout.name;
-
+    doSomething = e => {
+        debugger;
+        e.preventDefault();
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
     render() {
         return (
 
@@ -26,11 +31,13 @@ export class Layout extends Component {
                                 <li class="nav-item active"> <a class="nav-link" href="#"><i class="fas fa-home mr-2 listing"></i>Home </a> </li>
                                 <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-bus mr-2 listing"></i> Bus Infomation </a></li>
                                 <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-users mr-2 listing"></i> Social Group</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#"> <i class="fas fa-phone mr-2 listing"></i>Important Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"> <i class="fas fa-phone mr-2 listing"></i>Important Contact</a></li>
+                          
                             </ul>
                             <div class="dropdown-divider"></div>
                             <ul class="navbar-nav ml-auto">
-                                <li class="nav-item"><a id="openmodel" class="nav-link" data-toggle="modal" data-target="#RegModel"><i class="fas fa-user mr-2 listing"></i>Add Listing </a></li>
+                            <li class="nav-item"><a id="openmodel" class="nav-link" data-toggle="modal" data-target="#RegModel"><i class="fas fa-user mr-2 listing"></i>Add Listing </a></li>
+                            <button onClick={this.doSomething}>Dark Mode</button>
                             </ul>
                         </div> 
                     </nav>
