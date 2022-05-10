@@ -12,55 +12,650 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Dhar Info </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
     <!-- Bootstrap files (jQuery first, then Popper.js, then Bootstrap JS) -->
     <link href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/smart_wizard.min.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/smart_wizard_theme_dots.min.css" rel="stylesheet" type="text/css" />
-
-
     <link href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/smart_wizard.min.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/smart_wizard_theme_dots.min.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/jquery.smartWizard.min.js"></script>
-
-
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
-    <link href="Content/css/reg.css" rel="stylesheet" />
+    <!--New Files-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <link href="assets/css/flexslider.css" rel="stylesheet" />
+    <link href="assets/css/magnific-popup.css" rel="stylesheet" />
+    <link href="assets/css/materialdesignicons.min.css" rel="stylesheet" />
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="assets/css/slick-theme.css" rel="stylesheet" />
+    <link href="assets/css/slick.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/tiny-slider.css" rel="stylesheet" />
+    <link href="assets/css/toastr.css" rel="stylesheet" />
+    <link href="assets/css/tobii.min.css" rel="stylesheet" />
+    <link href="assets/css/color/red.css" rel="stylesheet" />
+
+
+
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/feather.min.js"></script>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/plugins.init.js"></script>
+    <script src="assets/js/scrollspy.min.js"></script>
+    <script src="assets/js/tiny-slider.js"></script>
+    <script src="assets/js/toastr.js"></script>
+
+
+    <!--Old Files-->
+    <!--<link href="" rel="stylesheet" />
     <link href="Content/css/responsive.css" rel="stylesheet" />
     <link href="Content/css/style.css" rel="stylesheet" />
     <link href="./fontawesome-icons/css/all.css" rel="stylesheet" />
     <script src="Content/js/dharinfo.js"></script>
-    <script src="Content/js/reg.js"></script>
+    <script src="Content/js/reg.js"></script>-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/jquery.smartWizard.min.js"></script>
+
+
+
+
+
+
+    <style type="text/css">
+        /*body {
+              margin: 0;
+              padding: 0;
+
+            }*/
+        .badge {
+            padding-left: 9px;
+            padding-right: 9px;
+            -webkit-border-radius: 9px;
+            -moz-border-radius: 9px;
+            border-radius: 9px;
+        }
+
+        .label-warning[href],
+        .badge-warning[href] {
+            background-color: #10707f;
+        }
+
+        #lblCartCount {
+            font-size: 12px;
+            background: #ffffff;
+            color: #ff5b69;
+            /* padding: 0 5px; */
+            vertical-align: top;
+            margin-left: -15px;
+            margin-top: -10px;
+            border-radius: 100%;
+            border-color: #ff5b69;
+            border: 1px;
+            border-style: solid;
+        }
+
+        .cs-loader {
+            position: absolute;
+            top: 0;
+            left: 100px;
+            height: 100%;
+            width: 100%;
+        }
+
+        .cs-loader-inner {
+            transform: translateY(-50%);
+            top: 50%;
+            position: absolute;
+            width: calc(100% - 200px);
+            color: red;
+            padding: 0 100px;
+            text-align: center;
+        }
+
+            .cs-loader-inner label {
+                font-size: 20px;
+                opacity: 0;
+                display: inline-block;
+            }
+
+        @keyframes lol {
+            0% {
+                opacity: 0;
+                transform: translateX(-300px);
+            }
+
+            33% {
+                opacity: 1;
+                transform: translateX(0px);
+            }
+
+            66% {
+                opacity: 1;
+                transform: translateX(0px);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translateX(300px);
+            }
+        }
+
+        @-webkit-keyframes lol {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateX(-300px);
+            }
+
+            33% {
+                opacity: 1;
+                -webkit-transform: translateX(0px);
+            }
+
+            66% {
+                opacity: 1;
+                -webkit-transform: translateX(0px);
+            }
+
+            100% {
+                opacity: 0;
+                -webkit-transform: translateX(300px);
+            }
+        }
+
+        .cs-loader-inner label:nth-child(6) {
+            -webkit-animation: lol 3s infinite ease-in-out;
+            animation: lol 3s infinite ease-in-out;
+        }
+
+        .cs-loader-inner label:nth-child(5) {
+            -webkit-animation: lol 3s 100ms infinite ease-in-out;
+            animation: lol 3s 100ms infinite ease-in-out;
+        }
+
+        .cs-loader-inner label:nth-child(4) {
+            -webkit-animation: lol 3s 200ms infinite ease-in-out;
+            animation: lol 3s 200ms infinite ease-in-out;
+        }
+
+        .cs-loader-inner label:nth-child(3) {
+            -webkit-animation: lol 3s 300ms infinite ease-in-out;
+            animation: lol 3s 300ms infinite ease-in-out;
+        }
+
+        .cs-loader-inner label:nth-child(2) {
+            -webkit-animation: lol 3s 400ms infinite ease-in-out;
+            animation: lol 3s 400ms infinite ease-in-out;
+        }
+
+        .cs-loader-inner label:nth-child(1) {
+            -webkit-animation: lol 3s 500ms infinite ease-in-out;
+            animation: lol 3s 500ms infinite ease-in-out;
+        }
+
+        .fixed {
+            position: fixed;
+            top: 0
+        }
+
+        .form-group .icons {
+            position: absolute;
+            top: 43px;
+            left: 18px;
+        }
+    </style>
+    <style type="text/css">
+        #loader {
+            background-color: rgba(0, 0, 0, 0.3);
+            height: 100%;
+            left: 0;
+            line-height: 600px;
+            position: fixed;
+            text-align: center;
+            top: 0;
+            width: 100%;
+            z-index: 20000;
+        }
+
+        .center {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .text-center-loader {
+            text-align: center !important;
+        }
+
+        #topnav .navigation-menu > li .submenu li a {
+            font-size: 13px;
+        }
+
+        img {
+            max-width: 100%;
+        }
+        .shop-image.position-relative.overflow-hidden.rounded.shadow {
+            height: 285px;
+            align-content: center;
+            display: grid;
+        }
+
+        #map {
+            height: 500px;
+        }
+    </style>
+
+
 </head>
 <body>
 
     <div id="root"></div>
-    <script>
-        $(document).ready(function () {
-
-            $('#smartwizard').smartWizard({
-                selected: 0,
-                theme: 'dots',
-                autoAdjustHeight: true,
-                transitionEffect: 'fade',
-                showStepURLhash: false,
-
-            });
-
-        });
-    </script>
-    <style>
-    </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        // jQuery Plug-in example
+        var ckpt = 0;
+        //    $("#headerLiveSearch").searchFilter({targetSelector: ".searchingItem"});
+        function isDecimal(n) {
+            var result = (n - Math.floor(n)) !== 0;
+            if (result)
+                return true;
+            else
+                return false;
+        }
+        function usesIsWallet(event, walletBalance, finalPrice) {
+            if ($(event).is(":checked")) {
+                $('#isWalletUse').val(1);
+                if (walletBalance >= finalPrice) {
+                    $('#changableFinalPrice').html('&#8377;' + '0.00');
+                    $('#changableWalletPrice').html('-' + '&#8377;' + finalPrice);
+                } else {
+                    $('#changableFinalPrice').html('&#8377;' + (finalPrice - walletBalance));
+                    $('#changableWalletPrice').html('-' + '&#8377;' + walletBalance);
+                }
+            } else {
+                $('#isWalletUse').val(0);
+                $('#changableFinalPrice').html('&#8377;' + finalPrice);
+                $('#changableWalletPrice').html('-' + '&#8377;' + '0.00');
+            }
+        }
+        //===============================
+
+        function paymentProcessForCart() {
+            $("#loader").css("display", "block");
+            let type = $('#isWalletUse').val();
+            window.location.replace('https://www.papertax.in/payment-process?type=' + btoa(type));
+        }
+        function paymentProcessCart(walletBalance) {
+            if (walletBalance > 0) {
+                $('#useItWalletPopUp').modal('show');
+            } else {
+                window.location.replace('https://www.papertax.in/payment-process?type=' + btoa(0));
+            }
+        }
+        /***********************************/
+        //=======================
+        function onEnter() {
+            var target = $('#homeProductListing');
+            if (target.length) {
+                event.preventDefault();
+                $('html, body').animate({
+                    scrollTop: target.offset().top,
+                    scrollBottom: target.offset().bottom
+                }, 3000);
+            }
+        }
+        //========================================
+        $(document).ready(function () {
+            $("#cntedfrm").hide();
+            if (localStorage.getItem("contacted") == 1) {
+                $("#cntedfrm").show();
+                $("#cntfrm").hide();
+            }
+            feather.replace();
+            let url = window.location.pathname;
+            lastSegment = url.split("/").pop();
+            if (!lastSegment.startsWith("dashboard")) {
+                $("#headerSearchDiv").hide();
+            }
+        }
+        );
+        //=============================
+        $(function () {
+
+            $(window).scroll(function () {
+                if ($("#topnav").hasClass("nav-sticky")) {
+                    $('.navigation-menu li a').removeClass('menuDecoration');
+                } else {
+                    $('.navigation-menu li a').addClass('menuDecoration');
+                }
+            });
+        });
+        //================================
+        function onCategoryClick(catName) {
+            window.location.replace("https://www.papertax.in/products?cat=" + catName);
+        }
+        function setWithExpiry(key, value, ttl) {
+            const now = new Date();
+            // `item` is an object which contains the original value
+            // as well as the time when it's supposed to expire
+            const item = {
+                value: value,
+                expiry: now.getTime() + ttl,
+            }
+            localStorage.setItem(key, JSON.stringify(item));
+        }
+        function getWithExpiry(key) {
+            const itemStr = localStorage.getItem(key);
+            // if the item doesn't exist, return null
+            if (!itemStr) {
+                return null
+            }
+            const item = JSON.parse(itemStr);
+            const now = new Date();
+            // compare the expiry time of the item with the current time
+            if (now.getTime() > item.expiry) {
+                // If the item is expired, delete the item from storage
+                // and return null
+                localStorage.removeItem(key);
+                return null
+            }
+            return item.value;
+        }
+
+        //================================
+        function showGoogleMap() {
+            $('#map').show();
+        }
+
+        //======================================
+        $("#app-link-send-form").validate({
+            rules: {
+                number: {
+                    required: true,
+                    maxlength: 10,
+                    minlength: 10,
+                    number: true
+                },
+            },
+            //For custom messages
+            messages: {
+                number: {
+                    required: "Please enter mobile number",
+                    maxlength: "Please enter 10 digit mobile number",
+                    minlength: "Please enter 10 digit mobile number",
+                    number: "mobile number is not correct"
+                },
+            },
+            errorElement: 'div',
+            errorPlacement: function (error, element) {
+                var placement = $(element).data('error');
+                if (placement) {
+                    $(placement).append(error)
+                } else {
+                    error.insertAfter($(".afterThis"));
+                }
+            },
+            submitHandler: function () {
+                var myform = document.getElementById("app-link-send-form");
+                var fd = new FormData(myform);
+                $.ajax({
+                    url: "https://www.papertax.in/send-app-link",
+                    data: fd,
+                    cache: false,
+                    processData: false,
+                    contentType: false,
+                    type: 'POST',
+                    dataType: 'json',
+                    success: function (data) {
+                        //console.log(data);
+
+                        if (data.status) {
+                            toastr["success"](data.msg, "Success!");
+                            setTimeout(function () {
+                                window.location.reload();
+                            }, 1000);
+                        } else {
+                            toastr["error"](data.msg, "Failed!");
+                        }
+                    }
+                });
+            }
+        });
+        //======================================
+        $("#subscribe-form").validate({
+            rules: {
+                email: {
+                    required: true,
+                    email: true
+                },
+            },
+            //For custom messages
+            messages: {
+                email: {
+                    required: "Please enter email",
+                    email: "Please enter a valid email address"
+                },
+            },
+            errorElement: 'div',
+            errorPlacement: function (error, element) {
+                var placement = $(element).data('error');
+                if (placement) {
+                    $(placement).append(error)
+                } else {
+                    error.insertAfter(element);
+                }
+            },
+            submitHandler: function () {
+                var myform = document.getElementById("subscribe-form");
+                var fd = new FormData(myform);
+                $.ajax({
+                    url: "https://www.papertax.in/subscribe-email",
+                    data: fd,
+                    cache: false,
+                    processData: false,
+                    contentType: false,
+                    type: 'POST',
+                    dataType: 'json',
+                    success: function (data) {
+                        //console.log(data);
+                        if (data.status) {
+                            //localStorage.setItem("user_mobile", $('#user_mobile').val());
+                            toastr["success"](data.msg, "Success!");
+                            setTimeout(function () {
+                                window.location.replace("https://www.papertax.in/");
+                            }, 1000);
+                        } else {
+                            toastr["error"](data.msg, "Failed!");
+                        }
+                    }
+                });
+            }
+        });
+        //================================
+        $(document).ajaxStart(function () {
+            if (ckpt == 0) {
+                $("#loader").css("display", "block");
+            }
+        });
+        $(document).ajaxComplete(function () {
+            ckpt = 0;
+            $("#loader").css("display", "none");
+        });
+        $("#contact-form").validate({
+            rules: {
+                name: {
+                    required: true,
+                    maxlength: 50,
+                    minlength: 2
+                },
+                email: {
+                    required: true,
+                    maxlength: 50,
+                    email: true
+                },
+                mobile: {
+                    required: true,
+                    maxlength: 10,
+                    minlength: 10,
+                    number: true
+                },
+                subject: {
+                    required: true,
+                    maxlength: 50,
+                },
+                comment: {
+                    maxlength: 180,
+                    required: true
+                }
+            },
+            //For custom messages
+            messages: {
+                name: {
+                    required: "Please enter full name",
+                    maxlength: "Please enter maximum 50 characters in full name",
+                    minlength: "Please enter minimum 2 characters in full name"
+                },
+                email: {
+                    required: "Please enter email",
+                    maxlength: "Please enter maximum 50 characters in email",
+                    email: "Please enter a valid email address"
+                },
+                mobile: {
+                    required: "Please enter mobile number",
+                    maxlength: "Please enter 10 digit mobile number",
+                    minlength: "Please enter 10 digit mobile number",
+                    number: "Please enter 10 digit valid number"
+                },
+                subject: {
+                    required: "Please enter subject",
+                    maxlength: "Please enter maximum 50 characters in subject",
+                },
+                comment: {
+                    maxlength: "Please enter maximum 180 characters in comment",
+                    required: "Please enter comment"
+                },
+            },
+            errorElement: 'div',
+            errorPlacement: function (error, element) {
+                var placement = $(element).data('error');
+                if (placement) {
+                    $(placement).append(error)
+                } else {
+                    error.insertAfter(element);
+                }
+            },
+            submitHandler: function () {
+
+                var myform = document.getElementById("contact-form");
+                var fd = new FormData(myform);
+                $.ajax({
+                    url: "https://www.papertax.in/contact-us",
+                    data: fd,
+                    cache: false,
+                    processData: false,
+                    contentType: false,
+                    type: 'POST',
+                    dataType: 'json',
+                    success: function (data) {
+                        //console.log(data);
+                        if (data.status) {
+                            localStorage.setItem("contacted", 1);
+                            toastr["success"](data.msg, "Success!");
+                            setTimeout(function () {
+                                window.location.replace("https://www.papertax.in/");
+                            }, 1000);
+                        } else {
+                            toastr["error"](data.msg, "Failed!");
+                        }
+                    }
+                });
+            }
+        });
+        //================================
+        function isNumber(evt) {
+            var iKeyCode = (evt.which) ? evt.which : evt.keyCode
+            if (iKeyCode != 46 && iKeyCode > 31 && (iKeyCode < 48 || iKeyCode > 57))
+                return false;
+
+            return true;
+        }
+
+        //=============================================
+
+        $(window).scroll(function () {
+
+            var windscroll = $(window).scrollTop();
+            if (windscroll >= 100) {
+                $('navigation-menu').addClass('fixed');
+                $('.mainSection').each(function (i) {
+                    if ($(this).position().top <= windscroll - 0) {
+                        $('.navigation-menu li.active').removeClass('active');
+                        $('.navigation-menu li').eq(i).addClass('active');
+                    }
+                });
+            } else {
+                $('navigation-menu').removeClass('fixed');
+                $('.navigation-menu li.active').removeClass('active');
+                $('.navigation-menu li:first').addClass('active');
+            }
+        }).scroll();
+
+        // setTimeout(function(){
+        //     $('.Contactus').removeClass('active');
+        //     $('.AppShowcase').addClass('active');
+        //     window.scrollTo(0,document.querySelector("#AppShowcase").scrollHeight);
+        // }, 1000);
+        //==========================================
+    </script>
+
+    <script>
+
+        var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?17085';
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = url;
+        var options = {
+            "enabled": true,
+            "chatButtonSetting": {
+                "backgroundColor": "#4dc247",
+                "ctaText": "",
+                "borderRadius": "25",
+                "marginLeft": "30",
+                "marginBottom": "20",
+                "marginRight": "30",
+                "position": "right"
+            },
+            "brandSetting": {
+                "brandName": "Paper Tax ",
+                "brandSubTitle": "Organizing Taxes",
+                "brandImg": "https://www.papertax.in/assets/images/paper_tax_images/papertax_icon.png",
+                "welcomeText": "Hi there!\nHow can I help you?",
+                "messageText": "",
+                "backgroundColor": "#ed2f59",
+                "ctaText": "Start Chat",
+                "borderRadius": "25",
+                "autoShow": false,
+                "phoneNumber": "918085289266"
+            }
+        };
+        s.onload = function () {
+            CreateWhatsappChatWidget(options);
+        };
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+    </script>
 
 </body>
 </html>
