@@ -93,7 +93,8 @@ export class Layout extends Component {
                                     </div>
                         </div>
                         </div>
-                         </header>
+                </header>
+
 
                     <Container>
                         {this.props.children}
