@@ -40,20 +40,20 @@ export class Home extends Component {
             <div >
                 {/*<div className="grids-area-hny main-cont-wthree-fea row justify-content-center">*/}
                   
-                {/*    {SuperCategoryList.map(items =>*/}
-                {/*        <div className="card mb-4" >*/}
-                {/*            */}{/*<img className="card-img-top" style={{ maxWidth: '100px' }} src="../../Content/img/12.png" alt="" />*/}
-                {/*            <h1>*/}
-                {/*                <i class={items.logo}></i>*/}
-                {/*            </h1>*/}
-                {/*            <div className="card-body">*/}
-                {/*                <h5 className="card-title text-center">{items.catName}</h5>*/}
+                {/*    */}{/*{SuperCategoryList.map(items =>*/}
+                {/*    */}{/*    <div className="card mb-4" >*/}
+                {/*    */}{/*        <img className="card-img-top" style={{ maxWidth: '100px' }} src="../../Content/img/12.png" alt="" />*/}
+                {/*    */}{/*        <h1>*/}
+                {/*    */}{/*            <i class={items.logo}></i>*/}
+                {/*    */}{/*        </h1>*/}
+                {/*    */}{/*        <div className="card-body">*/}
+                {/*    */}{/*            <h5 className="card-title text-center">{items.catName}</h5>*/}
 
-                {/*            </div>*/}
-                {/*            <NavLink to={"/category/" + items.catId} className="overlay-link"></NavLink>*/}
+                {/*    */}{/*        </div>*/}
+                {/*    */}{/*        <NavLink to={"/category/" + items.catId} className="overlay-link"></NavLink>*/}
                            
-                {/*        </div>*/}
-                {/*    )}*/}
+                {/*    */}{/*    </div>*/}
+                {/*    */}{/*)}*/}
                 {/*</div>*/}
 
 
@@ -74,10 +74,6 @@ export class Home extends Component {
                             </div>
                         </div>
                     </div>
-
-            
-             
-
                 <section class="main-slider mainSection" id="home">
                     <ul class="slides">
                         <li class="bg-slider slider-rtl-2 d-flex align-items-center" style={{ background: "url('https://www.papertax.in/assets/images/paper_tax_images/home-slider1.png') center center;" }}>
@@ -95,68 +91,88 @@ export class Home extends Component {
                                 </div>
                             </div>
                         </li>
-                        <li class="bg-slider slider-rtl-1 d-flex align-items-center" style={{ background: "url('https://www.papertax.in/assets/images/paper_tax_images/home-slider2.jpg') center center; background-repeat: no-repeat;" }}>
-                            <div class="container">
-                                <div class="row align-items-center mt-5">
-                                    <div class="col-lg-7 col-md-7">
-                                        <div class="title-heading mt-4">
-                                            <h1 class="display-4 title-white font-weight-bold mb-3">Sit, Relax & <span class="text-primary text-decoration-underline typewrite" data-period="2000" data-type='[ "have a good time!", "have a good time!", "have a good time!", "have a good time!" ]'> <span class="wrap"></span> </span> </h1>
-                                            <p class="para-desc text-muted para-dark">You are a taxpayer, it's your right to sit, relax and have a coffee till the time we complete your task.</p>
-                                            <div className="mt-4">
-                                                <a href={"https://www.papertax.in/products"} className="btn btn-soft-primary">Shop Now</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li className="bg-slider slider-rtl-3 d-flex align-items-center" style={{ background: "url('https://www.papertax.in/assets/images/paper_tax_images/home-slider3.jpg') center center; background-repeat: no-repeat;" }}>
-                            <div className="container">
-                                <div className="row align-items-center mt-5">
-                                    <div className="col-lg-7 col-md-7">
-                                        <div className="title-heading mt-4">
-                                            <h1 className="display-4 title-white font-weight-bold mb-3">Tax on <span className="text-primary text-decoration-underline typewrite" data-period="2000" data-type='[ "Fingertips...", "Fingertips...", "Fingertips...", "Fingertips..." ]'> <span className="wrap"></span> </span> </h1>
-                                            <p className="para-desc text-muted para-dark">Now don’t worry of managing various login for your family, relatives and friends legal compliances, you can manage all in single app with paper tax.</p>
-                                            <div className="mt-4">
-                                                <a href={"https://www.papertax.in/products"} className="btn btn-soft-primary">Shop Now</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li className="bg-slider slider-rtl-4 d-flex align-items-center" style={{ background: "url('https://www.papertax.in/assets/images/paper_tax_images/home-slider4.jpg') center center; background-repeat: no-repeat;" }}>
-                            <div className="container">
-                                <div className="row align-items-center mt-5">
-                                    <div className="col-lg-7 col-md-7">
-                                        <div className="title-heading mt-4">
-                                            <h1 className="display-4 title-white font-weight-bold mb-3">Tax on <span className="text-primary text-decoration-underline typewrite" data-period="2000" data-type='[ "Fingertips...", "Fingertips...", "Fingertips...", "Fingertips..." ]'> <span className="wrap"></span> </span> </h1>
-                                            <p className="para-desc text-muted para-dark">With the exclusive website and mobile app loaded with 200+ legal services, just fill your cart with what all you need and you are all set.</p>
-                                            <div className="mt-4">
-                                                <a href={"https://www.papertax.in/products"} className="btn btn-soft-primary">Shop Now</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li className="bg-slider slider-rtl-5 d-flex align-items-center" style={{ background: "url('https://www.papertax.in/assets/images/paper_tax_images/home-slider5.jpg') center center; background-repeat: no-repeat;" }}>
-                            <div className="container">
-                                <div className="row align-items-center mt-5">
-                                    <div className="col-lg-7 col-md-7">
-                                        <div className="title-heading mt-4">
-                                            <h1 className="display-4 title-white font-weight-bold mb-3">You are in a <span className="text-primary text-decoration-underline typewrite" data-period="2000" data-type='[ "good company!", "good company!", "good company!", "good company!" ]'> <span className="wrap"></span> </span> </h1>
-                                            <p className="para-desc text-muted para-dark">Lacs of tax returns filed till date with almost 98% accuracy qualifies us to process more than INR 15 crore tax refund for our clients and the good news is “numbers are increasing daily".</p>
-                                            <div className="mt-4">
-                                                <a href={"https://www.papertax.in/products"} className="btn btn-soft-primary">Shop Now</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
                     </ul>
                 </section>
+                <section className="section" id="homeProductListing">
+                    <div className="container mt-100 mt-60">
+                        <div className="row">
+                            <div className="col-12">
+                                <h5 className="mb-0">Top Categories</h5>
+                            </div>
+                        </div>
+                        <div className="row">
+                            {SuperCategoryList.map(items =>
+                            <div className="col-lg-2 col-md-4 col-6 mt-4 pt-2">
+                                <div className="card explore-feature border-0 rounded text-center bg-white">
+                                    <div className="card-body">
+                                        <div className="icon rounded-circle shadow-lg d-inline-block h2">
+                                                <i class={items.logo}></i>
+                                        </div>
+                                        <div className="content mt-3">
+                                                <h6 className="mb-0">{items.catName}</h6>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <NavLink to={"/category/" + items.catId} className="overlay-link"></NavLink>
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-12">
+                                <h5 className="mb-0">Deals Of The Day</h5>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-lg-3 col-md-6 col-12 mt-4 pt-2 searchingItem">
+                                <div className="card shop-list border-0 position-relative">
+                                    <div className="ribbon ribbon-left ribbon-danger overflow-hidden"><span className="text-center d-block shadow small h6">Hot</span></div>
+                                    <div className="shop-image position-relative overflow-hidden rounded shadow">
+                                        <a href={"https://www.papertax.in/get-product-details/NQ==/GST Registration"}><img src="https://www.papertax.in/uploads/product_img/1618657647508176218.jpg" className="img-fluid" alt="GST Registration"/></a>
+                                    </div>
+                                        <div className="card-body content pt-4 p-2">
+                                        <a href={"https://www.papertax.in/get-product-details/NQ==/GST Registration"} className="text-dark product-name h6">GST Registration</a>
+                                            <div className="justify-content-between mt-1">
+                                                <h6 className="text-muted small font-italic mb-0 mt-1">&#8377;1000.00 <del className="text-danger ml-2">&#8377;1,100.00 </del> </h6>
+                                                <ul className="list-unstyled text-warning mb-0">
+                                                    <li className="list-inline-item"><i className="mdi mdi-star"></i></li>
+                                                    <li className="list-inline-item"><i className="mdi mdi-star"></i></li>
+                                                    <li className="list-inline-item"><i className="mdi mdi-star"></i></li>
+                                                    <li className="list-inline-item"><i className="mdi mdi-star"></i></li>
+                                                    <li className="list-inline-item"><i className="mdi mdi-star"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-12 col-md-6 col-12 mt-4 pt-2">
+                                <div className="card work-process border-0">
+                                    <div className="card-body">
+                                    <a href={"https://www.papertax.in/products"} style={{ float: "right;" }} className="badge badge-pill badge-soft-primary">View more <i className="mdi mdi-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <div className="container-fluid mt-100 mt-60">
+                        <div className="rounded py-5" style={{ background: "url('https://www.papertax.in/assets/images/paper_tax_images/home-page-banner.jpg') fixed;background-position: 100% 0%;background-repeat: no-repeat;" }}>
+                                    <div className="container">
+                                        <div className="row">
+                                            <div className="col-12">
+                                                <div className="section-title">
+                                                    <h2 className="font-weight-bold mb-4">Enjoy hefty discounts on various services.discount upto 50% </h2>
+                                                        <p className="para-desc para-white text-muted mb-0">GST Registration, GST Returns, New Company Registration, Income Tax Returns, and many other services are now cheaper and affordable with Paper Tax, Shop now!.</p>
+                                                        <div className="mt-4">
+                                                <a href={"https://www.papertax.in/products"} className="btn btn-primary">Shop Now</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </section>
 
 
             </div>
