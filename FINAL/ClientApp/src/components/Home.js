@@ -38,25 +38,6 @@ export class Home extends Component {
     return (
         <>
             <div >
-                {/*<div className="grids-area-hny main-cont-wthree-fea row justify-content-center">*/}
-                  
-                {/*    */}{/*{SuperCategoryList.map(items =>*/}
-                {/*    */}{/*    <div className="card mb-4" >*/}
-                {/*    */}{/*        <img className="card-img-top" style={{ maxWidth: '100px' }} src="../../Content/img/12.png" alt="" />*/}
-                {/*    */}{/*        <h1>*/}
-                {/*    */}{/*            <i class={items.logo}></i>*/}
-                {/*    */}{/*        </h1>*/}
-                {/*    */}{/*        <div className="card-body">*/}
-                {/*    */}{/*            <h5 className="card-title text-center">{items.catName}</h5>*/}
-
-                {/*    */}{/*        </div>*/}
-                {/*    */}{/*        <NavLink to={"/category/" + items.catId} className="overlay-link"></NavLink>*/}
-                           
-                {/*    */}{/*    </div>*/}
-                {/*    */}{/*)}*/}
-                {/*</div>*/}
-
-
                 <div class="modal fade" id="useItWalletPopUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" style={{width: "30%;"}} role="document">
                         <div class="modal-content rounded shadow border-0">
@@ -100,9 +81,9 @@ export class Home extends Component {
                                 <h5 className="mb-0">Top Categories</h5>
                             </div>
                         </div>
-                        <div className="row">
+                        <div className="row justify-content-center">
                             {SuperCategoryList.map(items =>
-                            <div className="col-lg-2 col-md-4 col-6 mt-4 pt-2">
+                            <div className="col-lg-2 col-md-4 col-6 mt-4 pt-2 ">
                                 <div className="card explore-feature border-0 rounded text-center bg-white">
                                     <div className="card-body">
                                         <div className="icon rounded-circle shadow-lg d-inline-block h2">

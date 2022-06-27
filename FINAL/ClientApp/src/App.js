@@ -10,8 +10,6 @@ import BusinessInfo from './components/BusinessInfo';
 import AuthorizeRoute from './components/api-authorization/AuthorizeRoute';
 import ApiAuthorizationRoutes from './components/api-authorization/ApiAuthorizationRoutes';
 import { ApplicationPaths } from './components/api-authorization/ApiAuthorizationConstants';
-
-
 export default class App extends Component {
   static displayName = App.name;
 

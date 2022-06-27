@@ -1,6 +1,4 @@
-﻿
-
-async function CategoryData() {
+﻿async function CategoryData() {
     debugger
     const requestOptions = {
         method: 'GET',
